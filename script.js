@@ -78,3 +78,29 @@ function finishLoading() {
     bar.style.width = '0%';
   }, 500);
 }
+
+tsParticles.load({
+  id: "tsparticles",
+  options: {
+    preset: "chemical", 
+    particles: {
+      color: {
+        value: "#ff007f" 
+      },
+      links: {
+        color: "#ff007f",
+        distance: 150,
+        enable: true,
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 1.5 
+      },
+      number: {
+        value: 80 
+      }
+    }
+  }
+});
